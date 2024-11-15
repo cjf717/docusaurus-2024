@@ -1,0 +1,17 @@
+.navtitle {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5px;
+  .col-md {
+    .title {
+      padding: 0 5px;
+    }
+    .link:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}

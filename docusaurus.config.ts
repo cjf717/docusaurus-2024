@@ -76,6 +76,7 @@ const config: Config = {
   ],
 
   plugins: [
+    'docusaurus-plugin-sass', // sass样式插件
     [
       '@docusaurus/plugin-content-docs',
       {
@@ -118,9 +119,10 @@ const config: Config = {
           label: '文章',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
-        // {to: '/post', label: 'Post', position: 'left'},
+        {to: '/bookmark', label: '收藏夹', position: 'left'},
+        {to: '/aplayer', label: '播放器', position: 'left'},
         {
-          href: 'https://github.com/cjf717/docusaurus-blog',
+          href: 'https://github.com/cjf717/docusaurus-2024',
           label: 'GitHub',
           position: 'right',
         },
