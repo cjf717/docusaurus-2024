@@ -1,0 +1,35 @@
+facebook:
+  label: Facebook
+  permalink: /facebook
+  description: Facebook tag description
+
+hello:
+  label: Hello
+  permalink: /hello
+  description: Hello tag description
+
+docusaurus:
+  label: Docusaurus
+  permalink: /docusaurus
+  description: Docusaurus tag description
+
+hola:
+  label: Hola
+  permalink: /hola
+  description: Hola tag description
+KaTeX:
+  label: KaTeX
+  permalink: /KaTeX
+  description: KaTeX tag description
+标签1:
+  label: 标签1
+  permalink: /标签1
+  description: 标签1 tag description
+标签2:
+  label: 标签2
+  permalink: /标签2
+  description: 标签2 tag description
+WAV:
+  label: WAV
+  permalink: /WAV
+  description: WAV tag description
