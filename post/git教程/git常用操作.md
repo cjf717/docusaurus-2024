@@ -1,5 +1,5 @@
 ---
-title: git规范管理代码
+title: git常用操作
 date: 2023-09-07 13:50:45
 categories: 编程
 tags: [git]
