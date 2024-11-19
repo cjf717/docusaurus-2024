@@ -113,7 +113,7 @@ const config: Config = {
         {
           type: 'doc',
           docId: 'main',
-          sidebarId: 'postSidebar',
+          // sidebarId: 'postSidebar',
           docsPluginId: 'post',
           position: 'left',
           label: '文章',
@@ -121,6 +121,7 @@ const config: Config = {
         {to: '/blog', label: 'Blog', position: 'left'},
         {to: '/bookmark', label: '收藏夹', position: 'left'},
         {to: '/aplayer', label: '播放器', position: 'left'},
+        {to: '/demo', label: 'demo', position: 'left'},
         {
           href: 'https://github.com/cjf717/docusaurus-2024',
           label: 'GitHub',
