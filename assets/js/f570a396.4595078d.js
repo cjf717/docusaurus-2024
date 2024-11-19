@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocusaurus_2024=self.webpackChunkdocusaurus_2024||[]).push([[1740],{8987:(t,s,u)=>{u.r(s),u.d(s,{default:()=>e});u(6540);var p=u(3554),l=u.n(p),n=u(4848);function e(){return(0,n.jsx)(l(),{url:["https://lhttp.qingting.fm/live/4804/64k.mp3","https://lhttp.qtfm.cn/live/1262/64k.mp3","https://lhttp.qtfm.cn/live/4955/64k.mp3"],controls:!0})}}}]);
