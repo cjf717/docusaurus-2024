@@ -23,6 +23,7 @@ const config: Config = {
   organizationName: 'cjf717', // Usually your GitHub org/user name.拥有部署存储库的 GitHub 用户或组织。
   projectName: 'docusaurus-2024', // Usually your repo name.部署存储库的名称。
   trailingSlash: false, //添加尾部斜杠
+  deploymentBranch: 'main', //部署分支的名称
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
