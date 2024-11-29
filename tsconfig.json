@@ -4,6 +4,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "types": [
+      // 启用对 Sass/SCSS 模块的 TypeScript 支持
       "docusaurus-plugin-sass"
     ]
   }

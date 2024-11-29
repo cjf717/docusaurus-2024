@@ -1,7 +1,14 @@
+import {useEffect} from "react"
+import clsx from 'clsx';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Layout from '@theme/Layout';
+import Heading from '@theme/Heading';
+import styles from './styles.module.scss';
+
 import React from 'react';
 import ReactAplayer from 'react-aplayer';
 
-export default class Aplayer extends React.Component {
+class MyAplayer extends React.Component {
   // constructor (props) {
   //   super(props)
   //   console.log('constructor执行')
@@ -53,4 +60,23 @@ export default class Aplayer extends React.Component {
       </div>
     );
   }
+}
+
+class MyCpn extends React.Component {
+  render(){
+    return (<div>我的自定义组件</div>)
+  }
+}
+export default function AplayerFun(): JSX.Element {
+  const {siteConfig} = useDocusaurusContext();
+  return (
+    <Layout
+      title="音乐播放器"
+      description="react-aplayer播放器的测试">
+      <main className={styles.main}>
+        <h3> react-aplayer音乐播放器 </h3>
+        {/* <MyCpn /> */}
+      </main>
+    </Layout>
+  );
 }

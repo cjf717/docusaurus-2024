@@ -22,7 +22,7 @@ const config: Config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'cjf717', // Usually your GitHub org/user name.拥有部署存储库的 GitHub 用户或组织。
   projectName: 'docusaurus-2024', // Usually your repo name.部署存储库的名称。
-  trailingSlash: false, //添加尾部斜杠
+  trailingSlash: true, //添加尾部斜杠
   // deploymentBranch: 'gh-pages', //部署分支的名称,默认gh-pages
 
   onBrokenLinks: 'throw',
@@ -55,6 +55,8 @@ const config: Config = {
           // mdxLoaderOptions:{ remarkPlugins: [] },
         },
         blog: {
+          blogSidebarTitle: 'All posts',
+          blogSidebarCount: 'ALL',
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
@@ -62,8 +64,8 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -78,6 +80,7 @@ const config: Config = {
 
   plugins: [
     'docusaurus-plugin-sass', // sass样式插件
+    // 文档多实例
     [
       '@docusaurus/plugin-content-docs',
       {
@@ -93,6 +96,7 @@ const config: Config = {
   markdown: {
     mermaid: true,
   },
+
   themes: ['@docusaurus/theme-mermaid'],
 
   themeConfig: {
@@ -119,16 +123,22 @@ const config: Config = {
           position: 'left',
           label: '文章',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {to: '/bookmark', label: '收藏夹', position: 'left'},
-        {to: '/aplayer', label: '播放器', position: 'left'},
-        {to: '/demo', label: 'demo', position: 'left'},
+        {to: '/blog/', label: 'Blog', position: 'left'},
+        {to: '/bookmark/', label: '收藏夹', position: 'left'},
+        {to: '/music/', label: '播放器', position: 'left'},
+        {to: '/demo/', label: 'demo', position: 'left'},
         {
           href: 'https://github.com/cjf717/docusaurus-2024',
           label: 'GitHub',
           position: 'right',
         },
       ],
+    },
+    // 自动折叠侧边栏类别
+    docs: {
+      sidebar: {
+        autoCollapseCategories: true,
+      },
     },
     footer: {
       style: 'dark',

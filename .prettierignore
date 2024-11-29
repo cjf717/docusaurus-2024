@@ -1,0 +1,2 @@
+# Prettier仅支持旧版 MDX v1。如果你得到无意的格式化结果，你可能需要在有问题的区域之前添加 {/* prettier-ignore */}，或将 *.mdx 添加到 .prettierignore，直到 Prettier 对 MDX v3 提供适当的支持。MDX 的主要作者之一推荐 remark-cli 和 remark-mdx。
+*.mdx
