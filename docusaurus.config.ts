@@ -79,7 +79,14 @@ const config: Config = {
   ],
 
   plugins: [
-    'docusaurus-plugin-sass', // sass样式插件
+    // sass样式插件
+    'docusaurus-plugin-sass',
+    // [
+    //   'docusaurus-plugin-sass',
+    //   {scss: {
+    //     silenceDeprecations: ['legacy-js-api']
+    //   }}
+    // ],
     // 文档多实例
     [
       '@docusaurus/plugin-content-docs',

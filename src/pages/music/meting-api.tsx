@@ -2,14 +2,14 @@ import React, { PureComponent, Component } from 'react'
 import axios from "axios";
 import styles from './styles.module.scss';
 
-export class metingApi extends Component {
+export class metingApi extends PureComponent {
   constructor() {
     super()
     this.state = {
       server: "netease",
       types: "search",
-      id: "中国人",
-      musicList: null,
+      id: "中国",
+      musicList: [],
       isLoading: false
     }
   }
@@ -33,7 +33,11 @@ export class metingApi extends Component {
         // this.setState({musicList:res.data})
         }
       )
-      .catch((error) => console.log(error))
+      .catch((error) => {
+        console.log(error)
+        this.setState({ isLoading: false })
+      })
+      .finally()
   }
   // const listEls = {
   //   if (this.state.loading) {
@@ -46,7 +50,7 @@ export class metingApi extends Component {
     const { isLoading,musicList } = this.state
     return (
       <div className={styles.meting}>
-        <div className="form">
+        <div className={styles.form}>
         <h3 className="title">meting接口高级搜索</h3>
         <div>
           <label htmlFor="server">选择平台</label>
@@ -91,9 +95,22 @@ export class metingApi extends Component {
         </div>
         <div><button onClick={()=>this.getMusic()}>提交</button></div>
         </div>
-        <div className='loading'>isLoading：{ isLoading + ""}</div>
-        <div className='loading'>{ isLoading ? "加载中" : "" }</div>
-        <div className='list'>{ musicList ? musicList.map(item=><div>{item.title}</div>):"" }</div>
+        {/* <div className='loading'>isLoading：{ isLoading + ""}</div> */}
+        { isLoading ? <div className={styles.loading}>加载中...</div>: "" }
+        <ul className={styles.list}>
+          { musicList ? musicList.map((item,index)=>
+            <li className={styles.card} key={index}>
+              <div className={styles.album}><img className={styles.cover} src={item.pic} alt={item.title} /></div>
+              <div className={styles.content}>
+                <h4 className={styles.title}>{item.title}</h4>
+                <div className={styles.author}>{item.author}</div>
+                <div><a target="_blank" href={item.url}>url地址</a></div>
+                <div><a target="_blank" href={item.lrc}>lrc歌词</a></div>
+              </div>
+            </li>
+            ):""
+          }
+        </ul>
       </div>
     )
   }
