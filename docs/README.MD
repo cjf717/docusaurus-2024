@@ -11,7 +11,7 @@ git远程
 ```
 git remote add github git@github.com:cjf717/docusaurus-2024.git
 git push -u github main --force
-
+```
 
 ## 参考文章
 - docusaurus网站

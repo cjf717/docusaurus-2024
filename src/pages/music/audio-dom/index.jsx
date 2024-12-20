@@ -13,7 +13,7 @@ const AudioDom = memo(() =>  {
     console.log("useEffect只执行一次");
     // if (audioRef) audioRef.current.src = url
     // return ()=>{
-    //   console.log("useEffect返回内容");      
+    //   console.log("useEffect返回内容");
     // }
   },[])
 
@@ -33,7 +33,7 @@ const AudioDom = memo(() =>  {
         <h3>audio原生dom播放器</h3>
         <div>
           <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/audio" target="_blank" rel="noopener noreferrer">mdn文档</a>
-        </div> 
+        </div>
         <div><MyAudio music={musicCurrent} playClick={(item)=>playAudio(item)} /></div>
         <form>
           <div>

@@ -1,4 +1,5 @@
 import React, { memo, useRef,useEffect } from 'react'
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from "./index.module.css"
 
 const audio = memo(({music, playClick}) => {
@@ -9,18 +10,18 @@ const audio = memo(({music, playClick}) => {
   }
   useEffect(()=>{
     console.log("执行了useEffect", audioRef.current);
-    return () => {
-      audioRef.current.play()
-    }
+    // return () => {
+    //   audioRef.current.play()
+    // }
   },[music])
   return (
     <div>
-      <div>        
+      <div>
         <audio controls src={music.url} ref={audioRef} preload="none"></audio>
       </div>
       <div className={styles.audio}>
         <div className={styles.album}>
-          <img className={styles.cover} src={music.cover} alt="封面" />
+          <img className={styles.cover} src={useBaseUrl(music.cover)} alt="封面" />
         </div>
         <div className={styles.content}>
           <div>{music.title} - {music.artist}</div>

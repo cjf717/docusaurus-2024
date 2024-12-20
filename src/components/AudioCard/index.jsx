@@ -1,4 +1,5 @@
 import React, { memo } from 'react'
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from "./index.module.css"
 
 const card = memo(({item, playClick}) => {
@@ -10,7 +11,7 @@ const card = memo(({item, playClick}) => {
   return (
     <div className={styles.card}>
       <div className={styles.album}>
-        <img src={item.cover} alt="封面图片" className={styles.cover} />
+        <img src={useBaseUrl(item.cover)} alt="封面图片" className={styles.cover} />
       </div>
       <div className={styles.content}>
         <h5 className={styles.title}>{item.title}</h5>
