@@ -1,0 +1,20 @@
+[
+  {
+    "title": "怀集音乐之声",
+    "artist": "蜻蜓FM",
+    "url": "https://lhttp.qingting.fm/live/4804/64k.mp3",
+    "cover": "/img/site_logo/fm0758.png"
+  },
+  {
+    "title": "羊城交通台",
+    "artist": "蜻蜓FM",
+    "url": "https://lhttp.qtfm.cn/live/1262/64k.mp3",
+    "cover": "/img/site_logo/fm1052.png"
+  },
+  {
+    "title": "广州交通电台",
+    "artist": "蜻蜓FM",
+    "url": "https://lhttp.qtfm.cn/live/4955/64k.mp3",
+    "cover": "/img/site_logo/fm1061.png"
+  }
+]

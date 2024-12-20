@@ -1,0 +1,32 @@
+[
+  {
+    "id": 41,
+    "name": "FM98.5音乐广播",
+    "cover": "fm985.png"
+  },
+  {
+    "id": 42,
+    "name": "FM92.4应急/交通/南海广播",
+    "cover": "fm924.jpg"
+  },
+  {
+    "id": 43,
+    "name": "FM88.3高明广播",
+    "cover": "fm883.jpg"
+  },
+  {
+    "id": 44,
+    "name": "FM90.1顺德广播",
+    "cover": "fm901.jpg"
+  },
+  {
+    "id": 45,
+    "name": "FM90.6三水广播",
+    "cover": "fm906.jpg"
+  },
+  {
+    "id": 46,
+    "name": "FM94.6综合/禅城广播",
+    "cover": "fm946.png"
+  }
+]

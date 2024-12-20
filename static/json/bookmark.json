@@ -1,0 +1,36 @@
+[
+  {
+    "area": "新闻IT咨询",
+    "data": [
+      {
+        "site": "太平洋电脑",
+        "url": "https://www.pconline.com.cn/"
+      },
+      {
+        "site": "驱动之家",
+        "url": "https://www.mydrivers.com/"
+      },
+      {
+        "site": "IT之家",
+        "url": "https://www.ithome.com/"
+      }
+    ]
+  },
+  {
+    "area": "专业新闻IT咨询平台",
+    "data": [
+      {
+        "site": "我爱音频网",
+        "url": "https://www.52audio.com/"
+      },
+      {
+        "site": "充电头网",
+        "url": "https://www.chongdiantou.com/"
+      },
+      {
+        "site": "雷峰网",
+        "url": "https://www.leiphone.com/"
+      }
+    ]
+  }
+]
