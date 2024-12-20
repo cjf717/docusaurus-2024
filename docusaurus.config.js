@@ -15,15 +15,17 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://cjf717.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/docusaurus-2024/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'cjf717', // Usually your GitHub org/user name.拥有部署存储库的 GitHub 用户或组织。
+  projectName: 'docusaurus-2024', // Usually your repo name.部署存储库的名称。
+  trailingSlash: true, //添加尾部斜杠
+  // deploymentBranch: 'gh-pages', //部署分支的名称,默认gh-pages
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -63,7 +65,7 @@ const config = {
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
         },
-        
+
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -120,7 +122,7 @@ const config = {
             position: 'left',
             label: '文章',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},          
+          {to: '/blog', label: 'Blog', position: 'left'},
           {to: '/bookmark/', label: '收藏夹', position: 'left'},
           {to: '/music/', label: '播放器', position: 'left'},
           {to: '/about/', label: '关于', position: 'left'},

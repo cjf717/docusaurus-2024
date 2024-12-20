@@ -3,10 +3,15 @@
 Docusaurus 是用 JavaScript 开发的，是一个开源的静态网站生成器，并使用了一些流行的 JavaScript 库和框架，如 React、Webpack 和 Babel，旨在帮助开发者快速搭建易于维护和部署的文档网站。它是由 Facebook开源并持续维护的项目。
 ## 项目配置
 ```
-git remote add origin git@github.com:cjf717/docusaurus-2024.git
+git remote add origin git@gitee.com:jeff-chan/docusaurus-2024.git
 git branch -M main
 git push -u origin main
 ```
+git远程
+```
+git remote add github git@github.com:cjf717/docusaurus-2024.git
+git push -u github main --force
+
 
 ## 参考文章
 - docusaurus网站
